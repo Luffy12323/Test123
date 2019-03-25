@@ -257,12 +257,6 @@ Owner Bot | صاحب البوت : 👑ِIRAQ👑ِLuZoNa#5083
 }).catch(console.error)
 })
 
-client.on ("guildMemberAdd", member => {
-
-   var role = member.guild.roles.find ("name", "member");
-   member.addRole (role);
-  
-})
 
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
