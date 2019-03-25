@@ -405,7 +405,7 @@ welcomer.sendFile(canvas.toBuffer())
 
 client.on ("guildMemberAdd", member => {
 
-   var role = member.guild.roles.find ("name", "ARS");
+   var role = member.guild.roles.find ("name", "member");
    member.addRole (role);
   
 })
