@@ -247,7 +247,12 @@ client.on("guildMemberAdd", member => {
 
 ${member}  
 
+**مرحبا بك بالسيرفر | Welcome To Server
 
+Bot Name | اسم البوت : @👑ِ𝓓𝓚👑#0511 
+Bot Prefix | بريفكس البوت : [-]
+Help Command | امر المساعدة : -help
+Owner Bot | صاحب البوت : 👑ِIRAQ👑ِLuZoNa#5083
 `) 
 }).catch(console.error)
 })
@@ -396,6 +401,14 @@ welcomer.sendFile(canvas.toBuffer())
     client.channels.get("559743478343663616").send({embed:DK});
     }
 });   
+
+
+client.on ("guildMemberAdd", member => {
+
+   var role = member.guild.roles.find ("name", "ARS");
+   member.addRole (role);
+  
+})
 
 
   client.on('message', async message => {
@@ -997,7 +1010,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : LuZoNa ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`A-r Shop`,"http://twitch.tv/DJ")
+client.user.setGame(`A-r Shop | -help`,"http://twitch.tv/DJ")
 client.user.setStatus("dnd")
 });
  
